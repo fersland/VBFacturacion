@@ -1,0 +1,220 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\VB_MAESTRO\\PRESENTACION.vbproj": {}
+  },
+  "projects": {
+    "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj",
+        "projectName": "DATOS",
+        "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj",
+        "packagesPath": "C:\\Users\\fersl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fersl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj",
+        "projectName": "LOGICA",
+        "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj",
+        "packagesPath": "C:\\Users\\fersl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fersl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {
+              "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj": {
+                "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\VB_MAESTRO\\PRESENTACION.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\VB_MAESTRO\\PRESENTACION.vbproj",
+        "projectName": "PRESENTACION",
+        "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\VB_MAESTRO\\PRESENTACION.vbproj",
+        "packagesPath": "C:\\Users\\fersl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\VB_MAESTRO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fersl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {
+              "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj": {
+                "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj"
+              },
+              "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj": {
+                "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1586.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
