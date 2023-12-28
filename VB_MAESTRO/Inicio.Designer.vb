@@ -28,15 +28,17 @@ Partial Class Inicio
         VerClientesToolStripMenuItem = New ToolStripMenuItem()
         ProveedoresToolStripMenuItem = New ToolStripMenuItem()
         ComprasToolStripMenuItem = New ToolStripMenuItem()
+        NuevaCompraToolStripMenuItem = New ToolStripMenuItem()
         VentasToolStripMenuItem = New ToolStripMenuItem()
         FacturaciónToolStripMenuItem = New ToolStripMenuItem()
-        NuevaCompraToolStripMenuItem = New ToolStripMenuItem()
+        ProductosToolStripMenuItem = New ToolStripMenuItem()
+        MantenimientoToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' MenuStrip1
         ' 
-        MenuStrip1.Items.AddRange(New ToolStripItem() {InicioToolStripMenuItem, ClientesToolStripMenuItem, ProveedoresToolStripMenuItem, ComprasToolStripMenuItem, VentasToolStripMenuItem})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {InicioToolStripMenuItem, ClientesToolStripMenuItem, ProveedoresToolStripMenuItem, ComprasToolStripMenuItem, VentasToolStripMenuItem, ProductosToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Size = New Size(1213, 24)
@@ -75,6 +77,12 @@ Partial Class Inicio
         ComprasToolStripMenuItem.Size = New Size(67, 20)
         ComprasToolStripMenuItem.Text = "Compras"
         ' 
+        ' NuevaCompraToolStripMenuItem
+        ' 
+        NuevaCompraToolStripMenuItem.Name = "NuevaCompraToolStripMenuItem"
+        NuevaCompraToolStripMenuItem.Size = New Size(154, 22)
+        NuevaCompraToolStripMenuItem.Text = "Nueva Compra"
+        ' 
         ' VentasToolStripMenuItem
         ' 
         VentasToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {FacturaciónToolStripMenuItem})
@@ -85,14 +93,21 @@ Partial Class Inicio
         ' FacturaciónToolStripMenuItem
         ' 
         FacturaciónToolStripMenuItem.Name = "FacturaciónToolStripMenuItem"
-        FacturaciónToolStripMenuItem.Size = New Size(180, 22)
+        FacturaciónToolStripMenuItem.Size = New Size(136, 22)
         FacturaciónToolStripMenuItem.Text = "Facturación"
         ' 
-        ' NuevaCompraToolStripMenuItem
+        ' ProductosToolStripMenuItem
         ' 
-        NuevaCompraToolStripMenuItem.Name = "NuevaCompraToolStripMenuItem"
-        NuevaCompraToolStripMenuItem.Size = New Size(180, 22)
-        NuevaCompraToolStripMenuItem.Text = "Nueva Compra"
+        ProductosToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {MantenimientoToolStripMenuItem})
+        ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
+        ProductosToolStripMenuItem.Size = New Size(73, 20)
+        ProductosToolStripMenuItem.Text = "Productos"
+        ' 
+        ' MantenimientoToolStripMenuItem
+        ' 
+        MantenimientoToolStripMenuItem.Name = "MantenimientoToolStripMenuItem"
+        MantenimientoToolStripMenuItem.Size = New Size(180, 22)
+        MantenimientoToolStripMenuItem.Text = "Mantenimiento"
         ' 
         ' Inicio
         ' 
@@ -118,4 +133,6 @@ Partial Class Inicio
     Friend WithEvents VentasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FacturaciónToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NuevaCompraToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProductosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MantenimientoToolStripMenuItem As ToolStripMenuItem
 End Class

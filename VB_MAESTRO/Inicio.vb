@@ -19,4 +19,11 @@
         comp.MdiParent = Me
         comp.Show()
     End Sub
+
+    Private Sub MantenimientoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MantenimientoToolStripMenuItem.Click
+        Dim vista As New Productos
+        Me.IsMdiContainer = True
+        vista.MdiParent = Me
+        vista.Show()
+    End Sub
 End Class
