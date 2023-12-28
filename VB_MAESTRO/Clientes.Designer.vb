@@ -34,45 +34,49 @@ Partial Class Clientes
         btteditar = New Button()
         btteliminar = New Button()
         PrintDialog1 = New PrintDialog()
+        Label4 = New Label()
+        GroupBox1 = New GroupBox()
+        LinkLabel1 = New LinkLabel()
         CType(dg_clientes, ComponentModel.ISupportInitialize).BeginInit()
+        GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
         ' dg_clientes
         ' 
         dg_clientes.BackgroundColor = SystemColors.ControlLightLight
         dg_clientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dg_clientes.Location = New Point(93, 238)
+        dg_clientes.Location = New Point(34, 287)
         dg_clientes.Name = "dg_clientes"
         dg_clientes.RowTemplate.Height = 25
         dg_clientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dg_clientes.Size = New Size(606, 187)
-        dg_clientes.TabIndex = 1
+        dg_clientes.Size = New Size(742, 187)
+        dg_clientes.TabIndex = 12
         ' 
         ' txtcedula
         ' 
-        txtcedula.Location = New Point(249, 58)
+        txtcedula.Location = New Point(109, 29)
         txtcedula.Name = "txtcedula"
         txtcedula.Size = New Size(136, 23)
-        txtcedula.TabIndex = 2
+        txtcedula.TabIndex = 1
         ' 
         ' txtnombres
         ' 
-        txtnombres.Location = New Point(249, 93)
+        txtnombres.Location = New Point(109, 64)
         txtnombres.Name = "txtnombres"
         txtnombres.Size = New Size(136, 23)
         txtnombres.TabIndex = 2
         ' 
         ' txtapellidos
         ' 
-        txtapellidos.Location = New Point(249, 132)
+        txtapellidos.Location = New Point(109, 103)
         txtapellidos.Name = "txtapellidos"
         txtapellidos.Size = New Size(136, 23)
-        txtapellidos.TabIndex = 2
+        txtapellidos.TabIndex = 3
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(175, 66)
+        Label1.Location = New Point(35, 37)
         Label1.Name = "Label1"
         Label1.Size = New Size(57, 15)
         Label1.TabIndex = 3
@@ -81,7 +85,7 @@ Partial Class Clientes
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(164, 98)
+        Label2.Location = New Point(24, 69)
         Label2.Name = "Label2"
         Label2.Size = New Size(68, 15)
         Label2.TabIndex = 3
@@ -90,7 +94,7 @@ Partial Class Clientes
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(160, 137)
+        Label3.Location = New Point(20, 108)
         Label3.Name = "Label3"
         Label3.Size = New Size(72, 15)
         Label3.TabIndex = 3
@@ -98,12 +102,14 @@ Partial Class Clientes
         ' 
         ' bttguardar
         ' 
-        bttguardar.Location = New Point(93, 184)
+        bttguardar.BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
+        bttguardar.FlatStyle = FlatStyle.Flat
+        bttguardar.Location = New Point(89, 140)
         bttguardar.Name = "bttguardar"
         bttguardar.Size = New Size(139, 33)
-        bttguardar.TabIndex = 4
+        bttguardar.TabIndex = 9
         bttguardar.Text = "GUARDAR"
-        bttguardar.UseVisualStyleBackColor = True
+        bttguardar.UseVisualStyleBackColor = False
         ' 
         ' lblid
         ' 
@@ -116,46 +122,85 @@ Partial Class Clientes
         ' 
         ' btteditar
         ' 
-        btteditar.Location = New Point(243, 184)
+        btteditar.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(128))
+        btteditar.FlatStyle = FlatStyle.Flat
+        btteditar.Location = New Point(239, 140)
         btteditar.Name = "btteditar"
         btteditar.Size = New Size(139, 33)
-        btteditar.TabIndex = 4
+        btteditar.TabIndex = 10
         btteditar.Text = "EDITAR"
-        btteditar.UseVisualStyleBackColor = True
+        btteditar.UseVisualStyleBackColor = False
         ' 
         ' btteliminar
         ' 
-        btteliminar.Location = New Point(400, 184)
+        btteliminar.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
+        btteliminar.FlatStyle = FlatStyle.Flat
+        btteliminar.Location = New Point(396, 140)
         btteliminar.Name = "btteliminar"
         btteliminar.Size = New Size(139, 33)
-        btteliminar.TabIndex = 4
+        btteliminar.TabIndex = 11
         btteliminar.Text = "ELIMINAR"
-        btteliminar.UseVisualStyleBackColor = True
+        btteliminar.UseVisualStyleBackColor = False
         ' 
         ' PrintDialog1
         ' 
         PrintDialog1.UseEXDialog = True
         ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Location = New Point(34, 19)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(321, 32)
+        Label4.TabIndex = 6
+        Label4.Text = "CLIENTES - Mantenimiento"
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(Label1)
+        GroupBox1.Controls.Add(txtcedula)
+        GroupBox1.Controls.Add(txtnombres)
+        GroupBox1.Controls.Add(btteliminar)
+        GroupBox1.Controls.Add(btteditar)
+        GroupBox1.Controls.Add(txtapellidos)
+        GroupBox1.Controls.Add(bttguardar)
+        GroupBox1.Controls.Add(Label2)
+        GroupBox1.Controls.Add(Label3)
+        GroupBox1.Location = New Point(34, 85)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(742, 179)
+        GroupBox1.TabIndex = 15
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Complete el formulario :"
+        ' 
+        ' LinkLabel1
+        ' 
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(698, 66)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(46, 15)
+        LinkLabel1.TabIndex = 13
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "NUEVO"
+        ' 
         ' Clientes
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.GhostWhite
-        ClientSize = New Size(800, 450)
+        BackColor = SystemColors.HighlightText
+        ClientSize = New Size(800, 501)
+        Controls.Add(LinkLabel1)
+        Controls.Add(GroupBox1)
+        Controls.Add(Label4)
         Controls.Add(lblid)
-        Controls.Add(btteliminar)
-        Controls.Add(btteditar)
-        Controls.Add(bttguardar)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
-        Controls.Add(txtapellidos)
-        Controls.Add(txtnombres)
-        Controls.Add(txtcedula)
         Controls.Add(dg_clientes)
         Name = "Clientes"
-        Text = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "CLIENTES | ERP"
         CType(dg_clientes, ComponentModel.ISupportInitialize).EndInit()
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -171,4 +216,7 @@ Partial Class Clientes
     Friend WithEvents btteditar As Button
     Friend WithEvents btteliminar As Button
     Friend WithEvents PrintDialog1 As PrintDialog
+    Friend WithEvents Label4 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

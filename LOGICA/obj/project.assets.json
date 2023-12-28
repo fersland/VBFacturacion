@@ -497,11 +497,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj",
+      "projectUniqueName": "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\LOGICA\\LOGICA.vbproj",
       "projectName": "LOGICA",
-      "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj",
+      "projectPath": "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\LOGICA\\LOGICA.vbproj",
       "packagesPath": "C:\\Users\\fersl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\obj\\",
+      "outputPath": "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\LOGICA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -523,8 +523,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj": {
-              "projectPath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj"
+            "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\DATOS\\DATOS.vbproj": {
+              "projectPath": "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\DATOS\\DATOS.vbproj"
             }
           }
         }

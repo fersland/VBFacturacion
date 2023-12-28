@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GQ0xcJ+MTU5R6BNjvpf8yrLMatI2oQasfRcFemJD2IRbGTOuz4fhzNVqFuj7nvM41JocwgwF5veDWw6wy1AkzQ==",
+  "dgSpecHash": "N47HH+NIK0bcbniFxVWtgFqE2YI7IKS88yzP4MxpwsAOfx3Wooll1IIud14Xw/b4CJT9y9CVuXmUZSJWnxM1sA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\DATOS\\DATOS.vbproj",
+  "projectFilePath": "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\DATOS\\DATOS.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\fersl\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\fersl\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

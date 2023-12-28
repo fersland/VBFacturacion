@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SJpUpZx6LqzpB2Ak5xCt0DsLfTLzfX+ogeZzh0ErWbt33JD4hKjtksTEzMUO1VZcXuDzkgPoqiUobQ8jMsZ02g==",
+  "dgSpecHash": "MFHR6Lgydw+CXIdrt/UV74TF8/1jZhfBY/frsD1PeHyAPqF1wbK+wtudTimnXn/VanYdTqyFX349KijXNCtdrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\LOGICA\\LOGICA.vbproj",
+  "projectFilePath": "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\LOGICA\\LOGICA.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\fersl\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\fersl\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

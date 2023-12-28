@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B42L97z/D56Yn8KMVKrYiW9YXpZ88FS2sc7GPLNw8gDXwqf6IXgS/AG450kgVJM//XohYWuFLwQpeOdloJTygg==",
+  "dgSpecHash": "qz5OBQVT7viLIpTB4LMU9XoFG2/1KqsWkiBSrllnNZvRTwX+9Zu1z1+yZDwdrmh4oO/lvsmw6DHHTlaRVOLcgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fersl\\Documents\\NET\\AZUREDEVOPS\\CodySoft-VBFacturacion\\VB_MAESTRO\\VB_MAESTRO\\PRESENTACION.vbproj",
+  "projectFilePath": "C:\\Users\\fersl\\OneDrive\\Documentos\\GitHub\\VBFacturacion\\VB_MAESTRO\\PRESENTACION.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\fersl\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\fersl\\.nuget\\packages\\microsoft.reportingservices.reportviewercontrol.winforms\\150.1586.0\\microsoft.reportingservices.reportviewercontrol.winforms.150.1586.0.nupkg.sha512",
