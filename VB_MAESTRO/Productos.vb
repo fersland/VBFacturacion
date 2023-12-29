@@ -19,7 +19,14 @@ Public Class Productos
             MsgBox("Debe llenar todos los campos.")
         Else
             Try
-                logicaProductos.insertar(txtdesc.Text, txtprecio.Text, txtstock.Text)
+                Dim iva As Integer = 0
+                If checkiva.Checked = True Then
+                    iva = 12
+                Else
+                    iva = 0
+                End If
+
+                logicaProductos.insertar(txtdesc.Text, txtprecio.Text, txtstock.Text, iva)
                 listar()
                 MsgBox("Producto agregado correctamente.")
                 limpiar()
@@ -41,11 +48,18 @@ Public Class Productos
     End Sub
 
     Private Sub bttedit_Click(sender As Object, e As EventArgs) Handles bttedit.Click
+        Dim iva As Integer
+        If checkiva.Checked = True Then
+            iva = 12
+        Else
+            iva = 0
+        End If
+
         If txtdesc.Text = "" Or txtprecio.Text = "" Or txtstock.Text = "" Then
             MsgBox("Debe llenar todos los campos.")
         Else
             Try
-                logicaProductos.editar(lblid.Text, txtdesc.Text, txtprecio.Text, txtstock.Text)
+                logicaProductos.editar(lblid.Text, txtdesc.Text, txtprecio.Text, txtstock.Text, iva)
                 listar()
                 MsgBox("Producto editado correctamente.")
                 limpiar()

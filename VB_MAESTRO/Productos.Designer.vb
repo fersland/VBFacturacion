@@ -37,6 +37,7 @@ Partial Class Productos
         LinkLabel1 = New LinkLabel()
         GroupBox2 = New GroupBox()
         dgproductos = New DataGridView()
+        checkiva = New CheckBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         CType(dgproductos, ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +55,7 @@ Partial Class Productos
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(checkiva)
         GroupBox1.Controls.Add(lblid)
         GroupBox1.Controls.Add(bttdel)
         GroupBox1.Controls.Add(bttedit)
@@ -196,6 +198,16 @@ Partial Class Productos
         dgproductos.Size = New Size(667, 150)
         dgproductos.TabIndex = 9
         ' 
+        ' checkiva
+        ' 
+        checkiva.AutoSize = True
+        checkiva.Location = New Point(514, 79)
+        checkiva.Name = "checkiva"
+        checkiva.Size = New Size(149, 19)
+        checkiva.TabIndex = 8
+        checkiva.Text = "Productos Incluye IVA ?"
+        checkiva.UseVisualStyleBackColor = True
+        ' 
         ' Productos
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -231,4 +243,5 @@ Partial Class Productos
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents dgproductos As DataGridView
     Friend WithEvents lblid As Label
+    Friend WithEvents checkiva As CheckBox
 End Class

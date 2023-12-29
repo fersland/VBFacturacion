@@ -10,12 +10,13 @@ Public Class DProductos
         Return table
     End Function
 
-    Public Function insertar(descripcion As String, precio As Decimal, stock As Integer)
+    Public Function insertar(descripcion As String, precio As Decimal, stock As Integer, iva As Integer)
         Dim cmd As New SqlCommand("SP_PRODUCTOS_GUARDAR", db)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.AddWithValue("@descripcion", descripcion)
         cmd.Parameters.AddWithValue("@precio", precio)
         cmd.Parameters.AddWithValue("@stock", stock)
+        cmd.Parameters.AddWithValue("@iva", iva)
         db.Open()
 
         Dim response As Integer
@@ -29,13 +30,14 @@ Public Class DProductos
         Return response
     End Function
 
-    Public Function editar(id As Integer, descripcion As String, precio As Decimal, stock As Integer)
+    Public Function editar(id As Integer, descripcion As String, precio As Decimal, stock As Integer, iva As Integer)
         Dim cmd As New SqlCommand("SP_PRODUCTOS_EDITAR", db)
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.AddWithValue("@id", id)
         cmd.Parameters.AddWithValue("@descripcion", descripcion)
         cmd.Parameters.AddWithValue("@precio", precio)
         cmd.Parameters.AddWithValue("@stock", stock)
+        cmd.Parameters.AddWithValue("@iva", iva)
         db.Open()
 
         Dim response As Integer

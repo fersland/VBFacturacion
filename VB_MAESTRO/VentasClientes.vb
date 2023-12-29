@@ -8,6 +8,10 @@ Public Class VentasClientes
     End Sub
 
     Private Sub dgclientes_DoubleClick(sender As Object, e As EventArgs) Handles dgclientes.DoubleClick
+
+    End Sub
+
+    Private Sub dgclientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgclientes.CellContentClick
         Ventas.lblidcliente.Text = dgclientes.CurrentRow.Cells(0).Value.ToString
         Ventas.txtcedula.Text = dgclientes.CurrentRow.Cells(1).Value.ToString
         Ventas.txtnombres.Text = dgclientes.CurrentRow.Cells(2).Value.ToString

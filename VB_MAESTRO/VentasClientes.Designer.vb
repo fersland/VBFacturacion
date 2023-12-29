@@ -44,8 +44,13 @@ Partial Class VentasClientes
         ' 
         ' dgclientes
         ' 
+        dgclientes.AllowUserToAddRows = False
+        dgclientes.AllowUserToDeleteRows = False
+        dgclientes.AllowUserToResizeColumns = False
+        dgclientes.AllowUserToResizeRows = False
         dgclientes.BackgroundColor = Color.White
         dgclientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgclientes.EditMode = DataGridViewEditMode.EditProgrammatically
         dgclientes.Location = New Point(16, 53)
         dgclientes.Name = "dgclientes"
         dgclientes.RowTemplate.Height = 25

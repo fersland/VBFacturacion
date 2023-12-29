@@ -406,10 +406,10 @@ Partial Class Ventas
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Label13.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         Label13.Location = New Point(11, 13)
         Label13.Name = "Label13"
-        Label13.Size = New Size(140, 32)
+        Label13.Size = New Size(124, 30)
         Label13.TabIndex = 2
         Label13.Text = "N° VENTA: "
         ' 
@@ -417,7 +417,7 @@ Partial Class Ventas
         ' 
         lblnumventa.AutoSize = True
         lblnumventa.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
-        lblnumventa.Location = New Point(173, 15)
+        lblnumventa.Location = New Point(134, 15)
         lblnumventa.Name = "lblnumventa"
         lblnumventa.Size = New Size(0, 30)
         lblnumventa.TabIndex = 9
