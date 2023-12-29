@@ -24,12 +24,13 @@ Partial Class Productos
     Private Sub InitializeComponent()
         Label1 = New Label()
         GroupBox1 = New GroupBox()
+        lblid = New Label()
         bttdel = New Button()
         bttedit = New Button()
         bttsave = New Button()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
+        txtstock = New TextBox()
+        txtprecio = New TextBox()
+        txtdesc = New TextBox()
         Label4 = New Label()
         Label3 = New Label()
         Label2 = New Label()
@@ -53,12 +54,13 @@ Partial Class Productos
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Controls.Add(lblid)
         GroupBox1.Controls.Add(bttdel)
         GroupBox1.Controls.Add(bttedit)
         GroupBox1.Controls.Add(bttsave)
-        GroupBox1.Controls.Add(TextBox3)
-        GroupBox1.Controls.Add(TextBox2)
-        GroupBox1.Controls.Add(TextBox1)
+        GroupBox1.Controls.Add(txtstock)
+        GroupBox1.Controls.Add(txtprecio)
+        GroupBox1.Controls.Add(txtdesc)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
@@ -68,6 +70,14 @@ Partial Class Productos
         GroupBox1.TabIndex = 1
         GroupBox1.TabStop = False
         GroupBox1.Text = "Rellene el formulario :"
+        ' 
+        ' lblid
+        ' 
+        lblid.AutoSize = True
+        lblid.Location = New Point(10, 35)
+        lblid.Name = "lblid"
+        lblid.Size = New Size(0, 15)
+        lblid.TabIndex = 7
         ' 
         ' bttdel
         ' 
@@ -102,26 +112,26 @@ Partial Class Productos
         bttsave.Text = "GUARDAR"
         bttsave.UseVisualStyleBackColor = False
         ' 
-        ' TextBox3
+        ' txtstock
         ' 
-        TextBox3.Location = New Point(563, 39)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(100, 23)
-        TextBox3.TabIndex = 3
+        txtstock.Location = New Point(563, 39)
+        txtstock.Name = "txtstock"
+        txtstock.Size = New Size(100, 23)
+        txtstock.TabIndex = 3
         ' 
-        ' TextBox2
+        ' txtprecio
         ' 
-        TextBox2.Location = New Point(390, 36)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
-        TextBox2.TabIndex = 2
+        txtprecio.Location = New Point(390, 36)
+        txtprecio.Name = "txtprecio"
+        txtprecio.Size = New Size(100, 23)
+        txtprecio.TabIndex = 2
         ' 
-        ' TextBox1
+        ' txtdesc
         ' 
-        TextBox1.Location = New Point(117, 32)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(185, 23)
-        TextBox1.TabIndex = 1
+        txtdesc.Location = New Point(117, 32)
+        txtdesc.Name = "txtdesc"
+        txtdesc.Size = New Size(185, 23)
+        txtdesc.TabIndex = 1
         ' 
         ' Label4
         ' 
@@ -172,11 +182,17 @@ Partial Class Productos
         ' 
         ' dgproductos
         ' 
+        dgproductos.AllowUserToAddRows = False
+        dgproductos.AllowUserToDeleteRows = False
+        dgproductos.AllowUserToResizeColumns = False
+        dgproductos.AllowUserToResizeRows = False
         dgproductos.BackgroundColor = Color.Gainsboro
         dgproductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgproductos.EditMode = DataGridViewEditMode.EditProgrammatically
         dgproductos.Location = New Point(10, 26)
         dgproductos.Name = "dgproductos"
         dgproductos.RowTemplate.Height = 25
+        dgproductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         dgproductos.Size = New Size(667, 150)
         dgproductos.TabIndex = 9
         ' 
@@ -205,13 +221,14 @@ Partial Class Productos
     Friend WithEvents bttdel As Button
     Friend WithEvents bttedit As Button
     Friend WithEvents bttsave As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtstock As TextBox
+    Friend WithEvents txtprecio As TextBox
+    Friend WithEvents txtdesc As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents dgproductos As DataGridView
+    Friend WithEvents lblid As Label
 End Class

@@ -1,6 +1,4 @@
-﻿Imports System.Data.Sql
-Imports System.Data.SqlClient
-Imports System.IO
+﻿Imports System.Data.SqlClient
 
 Public Class DClientes
     Inherits Conexion
