@@ -19,7 +19,16 @@ Public Class DCompras
             Dim reader As SqlDataReader
             reader = cmd.ExecuteReader()
             If reader.Read Then
-                Return reader("Secuencial").ToString()
+                Dim resultado = reader("Secuencial").ToString()
+
+                If resultado = "" Then
+                    resultado = 1
+                Else
+                    resultado = reader("Secuencial").ToString()
+                End If
+
+                Return resultado
+
                 db.Close()
             Else
                 Return Nothing
@@ -60,12 +69,12 @@ Public Class DCompras
         Return respuesta
     End Function
 
-    Public Function finalizarCompraDatos()
+    Public Function finalizarCompraDatos(factura As Integer, proveedor As Integer, total As Decimal)
         Dim cmd As New SqlCommand("SP_COMPRAS", db)
         cmd.CommandType = CommandType.StoredProcedure
-        'cmd.Parameters.AddWithValue("@factura", factura)
-        'cmd.Parameters.AddWithValue("@proveedor", proveedor)
-        'cmd.Parameters.AddWithValue("@total", total)
+        cmd.Parameters.AddWithValue("@factura", factura)
+        cmd.Parameters.AddWithValue("@proveedor", proveedor)
+        cmd.Parameters.AddWithValue("@total", total)
         db.Open()
 
         Dim respuesta As Integer

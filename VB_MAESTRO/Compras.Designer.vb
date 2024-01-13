@@ -128,7 +128,7 @@ Partial Class Compras
         ' lblidproveedor
         ' 
         lblidproveedor.AutoSize = True
-        lblidproveedor.Location = New Point(363, 189)
+        lblidproveedor.Location = New Point(381, 189)
         lblidproveedor.Name = "lblidproveedor"
         lblidproveedor.Size = New Size(0, 15)
         lblidproveedor.TabIndex = 4
@@ -242,9 +242,9 @@ Partial Class Compras
         ' txtprovredor
         ' 
         txtprovredor.BackColor = Color.MistyRose
-        txtprovredor.Location = New Point(152, 181)
+        txtprovredor.Location = New Point(158, 181)
         txtprovredor.Name = "txtprovredor"
-        txtprovredor.Size = New Size(182, 23)
+        txtprovredor.Size = New Size(217, 23)
         txtprovredor.TabIndex = 1
         ' 
         ' dg_productos
@@ -297,7 +297,7 @@ Partial Class Compras
         ' 
         lblnumcompra.AutoSize = True
         lblnumcompra.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        lblnumcompra.Location = New Point(173, 18)
+        lblnumcompra.Location = New Point(151, 19)
         lblnumcompra.Name = "lblnumcompra"
         lblnumcompra.Size = New Size(0, 25)
         lblnumcompra.TabIndex = 3

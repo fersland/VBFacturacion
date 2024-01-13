@@ -106,14 +106,14 @@ Partial Class Inicio
         ' MantenimientoToolStripMenuItem
         ' 
         MantenimientoToolStripMenuItem.Name = "MantenimientoToolStripMenuItem"
-        MantenimientoToolStripMenuItem.Size = New Size(180, 22)
+        MantenimientoToolStripMenuItem.Size = New Size(156, 22)
         MantenimientoToolStripMenuItem.Text = "Mantenimiento"
         ' 
         ' Inicio
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1213, 646)
+        ClientSize = New Size(1213, 760)
         Controls.Add(MenuStrip1)
         MainMenuStrip = MenuStrip1
         Name = "Inicio"

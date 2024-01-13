@@ -29,7 +29,7 @@ Partial Class Ventas
         Label9 = New Label()
         txtbuscarproductos = New TextBox()
         GroupBox3 = New GroupBox()
-        bttbuscarcliente = New Button()
+        dgclientes = New DataGridView()
         lblidcliente = New Label()
         txtapellidos = New TextBox()
         Label3 = New Label()
@@ -37,6 +37,7 @@ Partial Class Ventas
         Label2 = New Label()
         txtcedula = New TextBox()
         Label1 = New Label()
+        bttbuscarcliente = New Button()
         GroupBox4 = New GroupBox()
         GroupBox5 = New GroupBox()
         lbliva = New Label()
@@ -64,6 +65,7 @@ Partial Class Ventas
         CType(dgcarrito, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
+        CType(dgclientes, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox4.SuspendLayout()
         GroupBox5.SuspendLayout()
         GroupBox6.SuspendLayout()
@@ -116,7 +118,7 @@ Partial Class Ventas
         GroupBox2.Controls.Add(dgproductos)
         GroupBox2.Controls.Add(Label9)
         GroupBox2.Controls.Add(txtbuscarproductos)
-        GroupBox2.Location = New Point(11, 97)
+        GroupBox2.Location = New Point(11, 241)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(767, 168)
         GroupBox2.TabIndex = 5
@@ -141,7 +143,7 @@ Partial Class Ventas
         ' 
         ' GroupBox3
         ' 
-        GroupBox3.Controls.Add(bttbuscarcliente)
+        GroupBox3.Controls.Add(dgclientes)
         GroupBox3.Controls.Add(lblidcliente)
         GroupBox3.Controls.Add(txtapellidos)
         GroupBox3.Controls.Add(Label3)
@@ -149,22 +151,28 @@ Partial Class Ventas
         GroupBox3.Controls.Add(Label2)
         GroupBox3.Controls.Add(txtcedula)
         GroupBox3.Controls.Add(Label1)
-        GroupBox3.Location = New Point(275, 7)
+        GroupBox3.Location = New Point(11, 74)
         GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(777, 75)
+        GroupBox3.Size = New Size(1041, 147)
         GroupBox3.TabIndex = 6
         GroupBox3.TabStop = False
         GroupBox3.Text = "DATOS DE CLIENTE"
         ' 
-        ' bttbuscarcliente
+        ' dgclientes
         ' 
-        bttbuscarcliente.BackColor = Color.Gainsboro
-        bttbuscarcliente.Location = New Point(651, 28)
-        bttbuscarcliente.Name = "bttbuscarcliente"
-        bttbuscarcliente.Size = New Size(119, 31)
-        bttbuscarcliente.TabIndex = 11
-        bttbuscarcliente.Text = "BUSCAR CLIENTE"
-        bttbuscarcliente.UseVisualStyleBackColor = False
+        dgclientes.AllowUserToAddRows = False
+        dgclientes.AllowUserToDeleteRows = False
+        dgclientes.AllowUserToResizeColumns = False
+        dgclientes.AllowUserToResizeRows = False
+        dgclientes.BackgroundColor = Color.White
+        dgclientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgclientes.EditMode = DataGridViewEditMode.EditProgrammatically
+        dgclientes.Location = New Point(300, 22)
+        dgclientes.Name = "dgclientes"
+        dgclientes.RowTemplate.Height = 25
+        dgclientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        dgclientes.Size = New Size(570, 109)
+        dgclientes.TabIndex = 12
         ' 
         ' lblidcliente
         ' 
@@ -177,7 +185,7 @@ Partial Class Ventas
         ' txtapellidos
         ' 
         txtapellidos.BackColor = Color.Beige
-        txtapellidos.Location = New Point(492, 32)
+        txtapellidos.Location = New Point(79, 106)
         txtapellidos.Name = "txtapellidos"
         txtapellidos.Size = New Size(156, 23)
         txtapellidos.TabIndex = 1
@@ -185,7 +193,7 @@ Partial Class Ventas
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(415, 35)
+        Label3.Location = New Point(2, 109)
         Label3.Name = "Label3"
         Label3.Size = New Size(72, 15)
         Label3.TabIndex = 0
@@ -194,7 +202,7 @@ Partial Class Ventas
         ' txtnombres
         ' 
         txtnombres.BackColor = Color.Beige
-        txtnombres.Location = New Point(252, 30)
+        txtnombres.Location = New Point(79, 71)
         txtnombres.Name = "txtnombres"
         txtnombres.Size = New Size(156, 23)
         txtnombres.TabIndex = 1
@@ -202,7 +210,7 @@ Partial Class Ventas
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(179, 33)
+        Label2.Location = New Point(6, 74)
         Label2.Name = "Label2"
         Label2.Size = New Size(68, 15)
         Label2.TabIndex = 0
@@ -225,10 +233,20 @@ Partial Class Ventas
         Label1.TabIndex = 0
         Label1.Text = "CEDULA :"
         ' 
+        ' bttbuscarcliente
+        ' 
+        bttbuscarcliente.BackColor = Color.Gainsboro
+        bttbuscarcliente.Location = New Point(934, 25)
+        bttbuscarcliente.Name = "bttbuscarcliente"
+        bttbuscarcliente.Size = New Size(119, 31)
+        bttbuscarcliente.TabIndex = 11
+        bttbuscarcliente.Text = "BUSCAR CLIENTE"
+        bttbuscarcliente.UseVisualStyleBackColor = False
+        ' 
         ' GroupBox4
         ' 
         GroupBox4.Controls.Add(dgcarrito)
-        GroupBox4.Location = New Point(11, 273)
+        GroupBox4.Location = New Point(11, 415)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Size = New Size(767, 228)
         GroupBox4.TabIndex = 7
@@ -248,7 +266,7 @@ Partial Class Ventas
         GroupBox5.Controls.Add(Label5)
         GroupBox5.Controls.Add(txtproducto)
         GroupBox5.Controls.Add(Label6)
-        GroupBox5.Location = New Point(800, 99)
+        GroupBox5.Location = New Point(800, 241)
         GroupBox5.Name = "GroupBox5"
         GroupBox5.Size = New Size(249, 168)
         GroupBox5.TabIndex = 6
@@ -348,7 +366,7 @@ Partial Class Ventas
         GroupBox6.Controls.Add(Label11)
         GroupBox6.Controls.Add(txtbasecero)
         GroupBox6.Controls.Add(Label10)
-        GroupBox6.Location = New Point(800, 273)
+        GroupBox6.Location = New Point(800, 415)
         GroupBox6.Name = "GroupBox6"
         GroupBox6.Size = New Size(224, 131)
         GroupBox6.TabIndex = 8
@@ -407,7 +425,7 @@ Partial Class Ventas
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Label13.Location = New Point(11, 13)
+        Label13.Location = New Point(16, 13)
         Label13.Name = "Label13"
         Label13.Size = New Size(124, 30)
         Label13.TabIndex = 2
@@ -435,7 +453,7 @@ Partial Class Ventas
         btt_finalizar.BackColor = Color.DarkSeaGreen
         btt_finalizar.FlatStyle = FlatStyle.System
         btt_finalizar.ForeColor = SystemColors.Desktop
-        btt_finalizar.Location = New Point(820, 421)
+        btt_finalizar.Location = New Point(820, 563)
         btt_finalizar.Name = "btt_finalizar"
         btt_finalizar.Size = New Size(178, 68)
         btt_finalizar.TabIndex = 11
@@ -447,8 +465,9 @@ Partial Class Ventas
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlLightLight
-        ClientSize = New Size(1065, 506)
+        ClientSize = New Size(1065, 652)
         Controls.Add(btt_finalizar)
+        Controls.Add(bttbuscarcliente)
         Controls.Add(lblidventadb)
         Controls.Add(lblnumventa)
         Controls.Add(Label13)
@@ -467,6 +486,7 @@ Partial Class Ventas
         GroupBox2.PerformLayout()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
+        CType(dgclientes, ComponentModel.ISupportInitialize).EndInit()
         GroupBox4.ResumeLayout(False)
         GroupBox5.ResumeLayout(False)
         GroupBox5.PerformLayout()
@@ -514,4 +534,5 @@ Partial Class Ventas
     Friend WithEvents bttbuscarcliente As Button
     Friend WithEvents lbliva As Label
     Friend WithEvents btt_finalizar As Button
+    Friend WithEvents dgclientes As DataGridView
 End Class

@@ -12,6 +12,13 @@ Public Class Compras
         listarProductos()
         listarCarrito()
         sumaDataGridView()
+        lblidcompradb.Visible = False
+        lblidproveedor.Visible = False
+        lbliva.Visible = False
+        txtproducto.ReadOnly = True
+        txtprecio.ReadOnly = True
+        txtstock.ReadOnly = True
+        lblidproductos.Visible = False
     End Sub
 
     Public Sub listarProveedores()
@@ -75,7 +82,9 @@ Public Class Compras
         txtcantidad.Clear()
         txtstock.Clear()
         lblidproductos.Text = ""
-
+        lblidproveedor.Text = ""
+        lbliva.Text = ""
+        txtprovredor.Text = ""
     End Sub
 
     Private Sub bttadd_Click(sender As Object, e As EventArgs) Handles bttadd.Click
@@ -125,6 +134,9 @@ Public Class Compras
     Private Sub bttguardar_Click(sender As Object, e As EventArgs) Handles bttguardar.Click
         If lblidcompradb.Text = "" Then
             MsgBox("Debe seleccionar el numero de compra")
+        ElseIf lblidproveedor.Text = "" Then
+            MsgBox("Debe seleccionar el Proveedor")
+
         Else
             objCompras.finalizarCompraLogica(lblidcompradb.Text, lblidproveedor.Text, txttotal.Text)
             MsgBox("Compra guardada")

@@ -16,6 +16,8 @@ Public Class Ventas
         ocultarLabels()
         masVentas()
         totalesGridView()
+
+        dgclientes.DataSource = objClassCliente.listarClienteLogica
     End Sub
 
     Public Sub masVentas()
@@ -55,6 +57,13 @@ Public Class Ventas
 
     Public Sub listarProductos()
         dgproductos.DataSource = objClassProducto.listarProductosLogica
+    End Sub
+
+    Sub llenarCliente()
+        lblidcliente.Text = dgclientes.CurrentRow.Cells(0).Value.ToString
+        txtcedula.Text = dgclientes.CurrentRow.Cells(1).Value.ToString
+        txtnombres.Text = dgclientes.CurrentRow.Cells(2).Value.ToString
+        txtapellidos.Text = dgclientes.CurrentRow.Cells(3).Value.ToString
     End Sub
 
     Public Sub listarCarrito()
@@ -196,5 +205,9 @@ Public Class Ventas
             limpiarVenta()
             masVentas()
         End If
+    End Sub
+
+    Private Sub dgclientes_DoubleClick(sender As Object, e As EventArgs) Handles dgclientes.DoubleClick
+        llenarCliente()
     End Sub
 End Class
