@@ -66,4 +66,12 @@ Public Class Clientes
             End Try
         End If
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        txtapellidos.Text = ""
+        txtcedula.Text = ""
+        txtnombres.Text = ""
+        lblid.Text = ""
+
+    End Sub
 End Class

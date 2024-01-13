@@ -59,7 +59,7 @@ Public Class DVentas
         cmd.Parameters.AddWithValue("@precio", precio)
         cmd.Parameters.AddWithValue("@iva", iva)
         cmd.Parameters.AddWithValue("@importe", importe)
-        cmd.Parameters.AddWithValue("@importeMasIva", importeMasIva)
+        cmd.Parameters.AddWithValue("@importeIva", importeMasIva)
 
         Dim respuesta As Integer
 

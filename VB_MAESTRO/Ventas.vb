@@ -29,6 +29,7 @@ Public Class Ventas
         lblidventadb.Text = consulta
     End Sub
 
+    ' Datos de solo lectura
     Public Sub reado()
         txtcedula.ReadOnly = True
         txtnombres.ReadOnly = True
@@ -96,6 +97,7 @@ Public Class Ventas
         txtnombres.Text = ""
         txtapellidos.Text = ""
         dgcarrito.Columns.Clear()
+
     End Sub
     Public Sub ocultarLabels()
         lblidventadb.Visible = False
@@ -169,7 +171,6 @@ Public Class Ventas
             objClassVenta.insertarCarritoDatos(lblidventadb.Text, lblidproductos.Text, txtcantidad.Text, txtprecio.Text, diferencia, importe, importeMasIva)
             listarCarrito()
             totalesGridView()
-
 
             limpiar()
 
