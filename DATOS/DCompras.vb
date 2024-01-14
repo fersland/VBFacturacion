@@ -51,8 +51,8 @@ Public Class DCompras
         cmd.Parameters.AddWithValue("@precio", precio)
         cmd.Parameters.AddWithValue("@cant", cantidad)
         cmd.Parameters.AddWithValue("@iva", iva)
-        cmd.Parameters.AddWithValue("@importe", iva)
-        cmd.Parameters.AddWithValue("@importeMasIva", factura)
+        cmd.Parameters.AddWithValue("@importe", importe)
+        cmd.Parameters.AddWithValue("@importeMasIva", importeMasIva)
 
         db.Open()
 

@@ -5,7 +5,6 @@ Public Class Clientes
     Dim acceso As New DClientes()
     Dim objLogica As New LClientes()
 
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         listar()
     End Sub
@@ -39,7 +38,7 @@ Public Class Clientes
             Try
                 objLogica.editarClienteLogica(lblid.Text, txtcedula.Text, txtnombres.Text, txtapellidos.Text)
                 listar()
-                MsgBox("Cliente actualizado correctamente.")
+                MsgBox("Cliente actualizado correctamente.", "Clientes", MsgBoxResult.Ok)
             Catch ex As Exception
                 MsgBox(ex.Message())
             End Try

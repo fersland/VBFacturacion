@@ -59,13 +59,13 @@ Public Class Compras
 
         If dg_compras.Rows.Count Then
             For Each fila As DataGridViewRow In dg_compras.Rows
-                suma1 += Convert.ToDecimal(fila.Cells(5).Value)
+                suma1 += Convert.ToDecimal(fila.Cells(4).Value) ' ANTES 5
             Next
         End If
 
         If dg_compras.Rows.Count Then
             For Each fila As DataGridViewRow In dg_compras.Rows
-                suma2 += Convert.ToDecimal(fila.Cells(7).Value)
+                suma2 += Convert.ToDecimal(fila.Cells(5).Value) ' ANTES 7
             Next
         End If
 
@@ -85,6 +85,7 @@ Public Class Compras
         lblidproveedor.Text = ""
         lbliva.Text = ""
         txtprovredor.Text = ""
+
     End Sub
 
     Private Sub bttadd_Click(sender As Object, e As EventArgs) Handles bttadd.Click
@@ -143,6 +144,9 @@ Public Class Compras
             limpiar()
             dg_compras.Columns.Clear()
             listarCarrito()
+            txtdoce.Text = ""
+            txtcero.Text = ""
+            txttotal.Text = ""
         End If
     End Sub
 End Class
