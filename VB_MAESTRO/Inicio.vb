@@ -26,4 +26,11 @@
         vista.MdiParent = Me
         vista.Show()
     End Sub
+
+    Private Sub VerProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VerProveedoresToolStripMenuItem.Click
+        Dim verProveedores As New Proveedores
+        Me.IsMdiContainer = True
+        verProveedores.MdiParent = Me
+        verProveedores.Show()
+    End Sub
 End Class

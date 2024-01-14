@@ -19,6 +19,9 @@
     <Compile Update="Productos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Ventas.vb">
       <SubType>Form</SubType>
     </Compile>

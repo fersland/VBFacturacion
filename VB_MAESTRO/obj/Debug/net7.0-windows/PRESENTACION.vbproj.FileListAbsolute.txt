@@ -380,3 +380,4 @@ C:\Users\fersl\OneDrive\Documentos\GitHub\VBFacturacion\VB_MAESTRO\obj\Debug\net
 C:\Users\fersl\OneDrive\Documentos\GitHub\VBFacturacion\VB_MAESTRO\obj\Debug\net7.0-windows\PRESENTACION.genruntimeconfig.cache
 C:\Users\fersl\OneDrive\Documentos\GitHub\VBFacturacion\VB_MAESTRO\obj\Debug\net7.0-windows\ref\PRESENTACION.dll
 C:\Users\fersl\OneDrive\Documentos\GitHub\VBFacturacion\VB_MAESTRO\obj\Debug\net7.0-windows\PRESENTACION.Productos.resources
+C:\Users\fersl\OneDrive\Documentos\GitHub\VBFacturacion\VB_MAESTRO\obj\Debug\net7.0-windows\PRESENTACION.Proveedores.resources

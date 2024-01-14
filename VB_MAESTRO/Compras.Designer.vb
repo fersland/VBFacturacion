@@ -113,9 +113,8 @@ Partial Class Compras
         lbliva.AutoSize = True
         lbliva.Location = New Point(525, 180)
         lbliva.Name = "lbliva"
-        lbliva.Size = New Size(41, 15)
+        lbliva.Size = New Size(0, 15)
         lbliva.TabIndex = 6
-        lbliva.Text = "Label9"
         ' 
         ' lblidproductos
         ' 
@@ -289,9 +288,8 @@ Partial Class Compras
         lblidcompradb.AutoSize = True
         lblidcompradb.Location = New Point(324, 9)
         lblidcompradb.Name = "lblidcompradb"
-        lblidcompradb.Size = New Size(41, 15)
+        lblidcompradb.Size = New Size(0, 15)
         lblidcompradb.TabIndex = 2
-        lblidcompradb.Text = "Label9"
         ' 
         ' lblnumcompra
         ' 

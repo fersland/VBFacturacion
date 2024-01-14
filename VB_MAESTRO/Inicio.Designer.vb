@@ -33,6 +33,7 @@ Partial Class Inicio
         FacturaciónToolStripMenuItem = New ToolStripMenuItem()
         ProductosToolStripMenuItem = New ToolStripMenuItem()
         MantenimientoToolStripMenuItem = New ToolStripMenuItem()
+        VerProveedoresToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -61,11 +62,12 @@ Partial Class Inicio
         ' VerClientesToolStripMenuItem
         ' 
         VerClientesToolStripMenuItem.Name = "VerClientesToolStripMenuItem"
-        VerClientesToolStripMenuItem.Size = New Size(135, 22)
+        VerClientesToolStripMenuItem.Size = New Size(180, 22)
         VerClientesToolStripMenuItem.Text = "Ver Clientes"
         ' 
         ' ProveedoresToolStripMenuItem
         ' 
+        ProveedoresToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {VerProveedoresToolStripMenuItem})
         ProveedoresToolStripMenuItem.Name = "ProveedoresToolStripMenuItem"
         ProveedoresToolStripMenuItem.Size = New Size(84, 20)
         ProveedoresToolStripMenuItem.Text = "Proveedores"
@@ -109,6 +111,12 @@ Partial Class Inicio
         MantenimientoToolStripMenuItem.Size = New Size(156, 22)
         MantenimientoToolStripMenuItem.Text = "Mantenimiento"
         ' 
+        ' VerProveedoresToolStripMenuItem
+        ' 
+        VerProveedoresToolStripMenuItem.Name = "VerProveedoresToolStripMenuItem"
+        VerProveedoresToolStripMenuItem.Size = New Size(180, 22)
+        VerProveedoresToolStripMenuItem.Text = "Ver Proveedores"
+        ' 
         ' Inicio
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -135,4 +143,5 @@ Partial Class Inicio
     Friend WithEvents NuevaCompraToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProductosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MantenimientoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VerProveedoresToolStripMenuItem As ToolStripMenuItem
 End Class
